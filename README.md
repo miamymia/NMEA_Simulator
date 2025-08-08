@@ -1,8 +1,9 @@
-# NMEA_Simulator
+# NMEA Simulator
 **Simulates live position data in nmea format sent over local network**
 
 `Simulate_GPS_server_TCP.py` reads an example nmea file (e.g. `output.nmea`) and send it line-by-line via TCP connection on local host
-To use e.g. with PosiView (QGIS plugin), see screenshots for configuration. Set the same port in Posiview as set in `Simulate_GPS_server_TCP.py`.
+To use e.g. with PosiView (QGIS plugin), see `PosiView_MobileVehicles.png` and `PosiView_PositionProvider.png` for configuration. Set the same port in Posiview as set in `Simulate_GPS_server_TCP.py`.
+It can also be used with **OpenCPN** to simulate vessel movement. Go to `Connections` -> `Add Connection` and follow the info given in `OpenCPN_config.png`
 
 **General Usage**: `python Simulate_GPS_server_TCP.py path/to/example_nmea.txt`
 
